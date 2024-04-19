@@ -1,3 +1,48 @@
-[gd_scene format=3 uid="uid://bs5p1gy3uk58r"]
+[gd_scene load_steps=3 format=3 uid="uid://bs5p1gy3uk58r"]
+
+[ext_resource type="Texture2D" uid="uid://k8nhgn7a5ri5" path="res://Assets/art/frame.png" id="1_14rel"]
+[ext_resource type="FontFile" path="res://Assets/fonts/impact.ttf" id="2_5p0kv"]
 
 [node name="Invader" type="Sprite2D"]
+texture = ExtResource("1_14rel")
+
+[node name="Low" type="Label" parent="."]
+offset_left = -236.0
+offset_top = -48.0
+offset_right = 228.0
+offset_bottom = 62.0
+theme_override_colors/font_color = Color(0.592157, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_5p0kv")
+theme_override_font_sizes/font_size = 90
+text = "1  +  1"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="High" type="Label" parent="."]
+offset_left = -236.0
+offset_top = -58.0
+offset_right = 228.0
+offset_bottom = 52.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_5p0kv")
+theme_override_font_sizes/font_size = 90
+text = "1  +  1"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Top" type="Label" parent="."]
+offset_left = -236.0
+offset_top = -55.0
+offset_right = 228.0
+offset_bottom = 55.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_5p0kv")
+theme_override_font_sizes/font_size = 90
+text = "1  +  1"
+horizontal_alignment = 1
+vertical_alignment = 2
