@@ -1,7 +1,17 @@
-[gd_scene format=3 uid="uid://dulj6xp80ttsm"]
+[gd_scene load_steps=3 format=3 uid="uid://dulj6xp80ttsm"]
+
+[ext_resource type="Texture2D" uid="uid://dl02xks7evap5" path="res://Assets/art/Back1.png" id="1_cvkp0"]
+[ext_resource type="PackedScene" uid="uid://bs5p1gy3uk58r" path="res://Scences/invader.tscn" id="2_gbckb"]
 
 [node name="Game" type="Node2D"]
 
 [node name="Background" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.203922)
+texture = ExtResource("1_cvkp0")
+centered = false
 
 [node name="InvaderContainer" type="Node2D" parent="."]
+
+[node name="Invader" parent="InvaderContainer" instance=ExtResource("2_gbckb")]
+position = Vector2(103.5, 40.75)
+scale = Vector2(0.282986, 0.379195)
