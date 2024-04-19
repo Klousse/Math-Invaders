@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dulj6xp80ttsm"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+
+[node name="InvaderContainer" type="Node2D" parent="."]
