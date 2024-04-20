@@ -13,5 +13,13 @@ centered = false
 [node name="InvaderContainer" type="Node2D" parent="."]
 
 [node name="Invader" parent="InvaderContainer" instance=ExtResource("2_o0ixr")]
-position = Vector2(157, 85)
+position = Vector2(348, 54)
+scale = Vector2(0.397569, 0.620805)
+
+[node name="Invader2" parent="InvaderContainer" instance=ExtResource("2_o0ixr")]
+position = Vector2(113, 52)
+scale = Vector2(0.397569, 0.620805)
+
+[node name="Invader3" parent="InvaderContainer" instance=ExtResource("2_o0ixr")]
+position = Vector2(594, 54)
 scale = Vector2(0.397569, 0.620805)

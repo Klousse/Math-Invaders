@@ -1,12 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://bs5p1gy3uk58r"]
+[gd_scene load_steps=4 format=3 uid="uid://bs5p1gy3uk58r"]
 
 [ext_resource type="Texture2D" uid="uid://k8nhgn7a5ri5" path="res://Assets/art/frame.png" id="1_pe3rm"]
 [ext_resource type="FontFile" uid="uid://d2jq8fxj6a4o6" path="res://Assets/fonts/impact.ttf" id="2_irfb8"]
+[ext_resource type="Script" path="res://Scripts/invader.gd" id="2_ycmcs"]
 
 [node name="Invader" type="Sprite2D"]
 texture = ExtResource("1_pe3rm")
+script = ExtResource("2_ycmcs")
 
-[node name="Low" type="Label" parent="."]
+[node name="Labels" type="Node2D" parent="."]
+
+[node name="Low" type="Label" parent="Labels"]
 offset_left = -236.0
 offset_top = -48.0
 offset_right = 228.0
@@ -20,7 +24,7 @@ text = "1  +  1"
 horizontal_alignment = 1
 vertical_alignment = 2
 
-[node name="High" type="Label" parent="."]
+[node name="High" type="Label" parent="Labels"]
 offset_left = -236.0
 offset_top = -58.0
 offset_right = 228.0
@@ -34,7 +38,7 @@ text = "1  +  1"
 horizontal_alignment = 1
 vertical_alignment = 2
 
-[node name="Top" type="Label" parent="."]
+[node name="Top" type="Label" parent="Labels"]
 offset_left = -236.0
 offset_top = -55.0
 offset_right = 228.0
