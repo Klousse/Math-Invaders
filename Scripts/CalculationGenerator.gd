@@ -4,6 +4,7 @@ class_name generator
 
 var p_digitWeights = [1,1,1,1,1,1,1,1,1,1] #weightings for producing a digit between 0 ~ 9
 
+
 func GetProbabilityIndex(table, nOutOf=null):
 	if nOutOf == null:
 		nOutOf = 0
@@ -29,11 +30,11 @@ func GenerateNumber(digits) -> int:
 		string += string + str(GetProbabilityIndex(p_digitWeights))
 	return int(string)
 	
-	
-func generate_addition() -> int:
+func generate_addition() -> [string, int]:
 # Generate an addition calculation, e.g., 10 + 5
-	var operand1 = randi() % 90 + 10
-	var operand2 = randi() % 90 + 10
+	var operand1 = GenerateNumber(2)
+	var operand2 = GenerateNumber(1)
+	var answer = 
 	return operand1 + operand2
 	
 # Called when the node enters the scene tree for the first time.

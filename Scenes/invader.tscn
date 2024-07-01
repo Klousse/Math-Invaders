@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://bs5p1gy3uk58r"]
+[gd_scene load_steps=5 format=3 uid="uid://bs5p1gy3uk58r"]
 
 [ext_resource type="Texture2D" uid="uid://k8nhgn7a5ri5" path="res://Assets/art/frame.png" id="1_pe3rm"]
 [ext_resource type="FontFile" uid="uid://d2jq8fxj6a4o6" path="res://Assets/fonts/impact.ttf" id="2_irfb8"]
 [ext_resource type="Script" path="res://Scripts/invader.gd" id="2_ycmcs"]
+
+[sub_resource type="Theme" id="Theme_kk50d"]
 
 [node name="Invader" type="Sprite2D"]
 texture = ExtResource("1_pe3rm")
@@ -10,41 +12,17 @@ script = ExtResource("2_ycmcs")
 
 [node name="Labels" type="Node2D" parent="."]
 
-[node name="Low" type="Label" parent="Labels"]
+[node name="Calculation" type="Label" parent="Labels"]
 offset_left = -236.0
 offset_top = -48.0
 offset_right = 228.0
 offset_bottom = 62.0
-theme_override_colors/font_color = Color(0.592157, 0, 0, 1)
+theme = SubResource("Theme_kk50d")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.611765, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 10
-theme_override_fonts/font = ExtResource("2_irfb8")
-theme_override_font_sizes/font_size = 90
-text = "1  +  1"
-horizontal_alignment = 1
-vertical_alignment = 2
-
-[node name="High" type="Label" parent="Labels"]
-offset_left = -236.0
-offset_top = -58.0
-offset_right = 228.0
-offset_bottom = 52.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 10
-theme_override_fonts/font = ExtResource("2_irfb8")
-theme_override_font_sizes/font_size = 90
-text = "1  +  1"
-horizontal_alignment = 1
-vertical_alignment = 2
-
-[node name="Top" type="Label" parent="Labels"]
-offset_left = -236.0
-offset_top = -55.0
-offset_right = 228.0
-offset_bottom = 55.0
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 10
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/outline_size = 11
 theme_override_fonts/font = ExtResource("2_irfb8")
 theme_override_font_sizes/font_size = 90
 text = "1  +  1"
