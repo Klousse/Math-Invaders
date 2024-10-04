@@ -87,7 +87,7 @@ func _on_left_wall_area_entered(area):
 		movement_direction *= -1
 
 func on_invader_shoot():
-	var random_child_position = get_children().filter(func (child ): return child is Invader).map(func (invader): return invader.global_position).pick_random()
+	var random_child_position = get_children().filter(func (child): return child is Invader).map(func (invader): return invader.global_position).pick_random()
 
 	var invader_shot = invader_shot_scene.instantiate() as InvaderShot
 	invader_shot.global_position = random_child_position
