@@ -15,6 +15,13 @@ run/main_scene="start_screen.tscn"
 config/features=PackedStringArray("4.3")
 config/icon="res://icon.png"
 
+[file_customization]
+
+folder_colors={
+"res://Scenes/": "blue",
+"res://Scripts/": "green"
+}
+
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
